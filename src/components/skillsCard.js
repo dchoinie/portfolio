@@ -16,7 +16,7 @@ export default class skillsCard extends Component {
 
   render() {
     return (
-      <div className="rounded-md bg-gray-100 shadow-md">
+      <div className="rounded-md bg-gray-100 shadow-md mt-12 lg:mt-0">
         <div className="flex justify-center text-5xl -mt-12">
           <h4 className="bg-main-navy p-5 text-white rounded-full">
             {this.props.icon}

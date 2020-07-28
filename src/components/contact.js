@@ -3,13 +3,15 @@ import { FiSend } from "react-icons/fi"
 
 const Contact = () => {
   return (
-    <div id="contact" className="mt-24">
-      <div className="bg-white h-screen">
+    <div id="contact" className="lg:mt-24 px-6 lg:px-40">
+      <div className="bg-white lg:h-screen">
         <div className="flex justify-center h-full w-full">
-          <div className="w-full self-center px-40">
+          <div className="w-full self-center">
             <div className="flex flex-col items-center mb-6">
-              <h2 className="text-main-navy text-5xl">contact</h2>
-              <p className="text-gray-600 text-xl text-center max-w-4xl">
+              <h2 className="text-main-navy text-3xl lg:text-5xl tracking-wider leading-tight">
+                contact
+              </h2>
+              <p className="text-gray-600 text-base lg:text-xl text-center lg:max-w-4xl">
                 Let's get in touch! If you want to talk about a project, have a
                 spot on your team I might be a fit for, or just want to say hi,
                 I'd love to hear from you.
@@ -17,7 +19,8 @@ const Contact = () => {
             </div>
             <div className="flex w-full">
               <form
-                action=""
+                name="contact"
+                netlify
                 className="flex flex-col w-full text-lg text-main-navy"
               >
                 <div className="flex gap-6 mb-3">

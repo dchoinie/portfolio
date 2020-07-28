@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll"
 
 const Header = () => (
-  <header className="z-10 relative">
+  <header className="z-10 relative hidden lg:block">
     <div className="flex w-full justify-between py-4">
       <div className="bg-main-navy rounded-tr-full rounded-br-full py-1">
         <Link

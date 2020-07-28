@@ -29,10 +29,12 @@ const About = () => {
         backgroundRepeat: "no-repeat",
       }}
     >
-      <div className="bg-transparent px-40" id="about">
+      <div className="bg-transparent px-6 lg:px-40 mb-12 lg:mb-0" id="about">
         <div className="flex flex-col items-center">
-          <h2 className="text-main-navy text-5xl">About Me</h2>
-          <p className="text-gray-600 max-w-4xl text-center">
+          <h2 className="text-main-navy text-3xl lg:text-5xl tracking-wider leading-tight">
+            About Me
+          </h2>
+          <p className="text-gray-600 lg:max-w-4xl text-center text-base lg:text-xl">
             I am a freelance developer, digital assets manager &amp; former
             tennis teaching proffesional from Minneapolis, MN. I started doing
             freelance development in 2016 building some simple WordPress sites
@@ -42,14 +44,14 @@ const About = () => {
             knowledge and have created #JAMstack marketing sites &amp; React.js
             web applications for numerous small businesses.
           </p>
-          <div className="flex w-full">
-            <div className="flex w-1/2 p-6">
+          <div className="flex flex-col lg:flex-row w-full">
+            <div className="flex w-full lg:w-1/2 p-6">
               <Img
                 fluid={data.collage.childImageSharp.fluid}
                 className="w-full rounded-lg shadow-md"
               />
             </div>
-            <div className="flex flex-col w-1/2 p-6 self-center">
+            <div className="flex flex-col w-full lg:w-1/2 lg:p-6 self-center">
               <h4 className="text-2xl text-main-blue">Things I like to do</h4>
               <div className="border-b border-gray-400 w-1/3 my-2"></div>
               <ul className="flex flex-col">

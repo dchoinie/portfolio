@@ -1,6 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
+import MobileHeader from "./mobileHeader"
 import Footer from "./footer"
 
 const Layout = ({ children }) => {
@@ -17,6 +18,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header />
+      <MobileHeader />
       {children}
       <Footer />
     </>

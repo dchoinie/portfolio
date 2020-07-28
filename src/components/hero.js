@@ -48,7 +48,10 @@ const Hero = () => {
   ]
 
   return (
-    <BackgroundImage fluid={backgroundStack} className="w-full h-full">
+    <BackgroundImage
+      fluid={backgroundStack}
+      className="w-full h-full hidden lg:block"
+    >
       <div
         className="flex w-full relative z-10 px-40 h-screen"
         style={{ marginTop: "-76px" }}
@@ -57,9 +60,9 @@ const Hero = () => {
           <h1 className="text-5xl 2xl:text-6xl text-main-navy leading-tight tracking-wider">
             Frontend Developer
           </h1>
-          <h4 className="text-main-blue text-2xl 2xl:text-3xl font-bold">
+          <h2 className="text-main-blue text-2xl 2xl:text-3xl font-bold">
             helping businesses discover new possibilities
-          </h4>
+          </h2>
           <button className="flex justify-center bg-main-navy text-lg my-2 w-1/3 text-white lowercase py-2 px-8 rounded-md focus:outline-none tracking-wider hover:bg-blue-800">
             <ScrollLink to="contact" smooth={true} duration={500}>
               Let's Chat

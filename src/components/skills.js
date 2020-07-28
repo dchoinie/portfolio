@@ -4,19 +4,21 @@ import SkillsCard from "../components/skillsCard"
 
 const Skills = () => {
   return (
-    <div className="bg-white h-screen" id="skills">
+    <div className="bg-white lg:h-screen mb-12 lg:mb-0" id="skills">
       <div className="flex justify-center h-full w-full">
-        <div className="w-full self-center px-40">
+        <div className="w-full self-center px-6 lg:px-40">
           <div className="flex flex-col items-center">
-            <h2 className="text-main-navy text-5xl">Tech Skills</h2>
-            <p className="text-gray-600 text-xl text-center max-w-4xl">
+            <h2 className="text-main-navy text-3xl lg:text-5xl leading-tight tracking-wider">
+              Tech Skills
+            </h2>
+            <p className="text-gray-600 text-base lg:text-xl text-center lg:max-w-4xl">
               Self-taught developer specializing in frontend technologies. I
               love to help small businesses expand their online presence.
               Whether you need a blazing-fast marketing site, a full-stack web
               app, or e-commerce functionality, I would love to help!
             </p>
           </div>
-          <div className="grid grid-cols-3 gap-6 mt-24">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-24">
             <SkillsCard
               icon={<FaCode />}
               title="Frontend"

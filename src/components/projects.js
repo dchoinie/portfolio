@@ -59,16 +59,18 @@ const Projects = () => {
     }
   `)
   return (
-    <div id="projects" className="px-40">
+    <div id="projects" className="px-6 lg:px-40 mb-12 lg:mb-0">
       <div className="flex h-full w-full">
         <div className="w-full self-center">
           <div className="flex flex-col items-center mb-6">
-            <h2 className="text-main-navy text-5xl">Projects</h2>
-            <p className="text-gray-600 text-xl text-center max-w-4xl">
+            <h2 className="text-main-navy text-3xl lg:text-5xl tracking-wide leading-tight">
+              Projects
+            </h2>
+            <p className="text-gray-600 text-base lg:text-xl text-center max-w-4xl">
               Check out a few of my most recent projects.
             </p>
           </div>
-          <div className="grid grid-cols-4 w-full gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-full gap-6">
             <ProjectCard
               title="Navi Savi"
               desc="Travel app based out of NYC"
