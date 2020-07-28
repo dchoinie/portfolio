@@ -3,7 +3,7 @@ import { FiSend } from "react-icons/fi"
 
 const Contact = () => {
   return (
-    <div id="contact">
+    <div id="contact" className="mt-24">
       <div className="bg-white h-screen">
         <div className="flex justify-center h-full w-full">
           <div className="w-full self-center px-40">

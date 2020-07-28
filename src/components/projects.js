@@ -78,6 +78,7 @@ const Projects = () => {
               tech3="Tailwind CSS"
               tech4="Contentful CMS"
               tech5="Cloudinary"
+              tech6="GraphQL"
             />
             <ProjectCard
               title="Mini Pop Kids"
@@ -88,6 +89,7 @@ const Projects = () => {
               tech3="Airtable CMS"
               tech4="Auth0"
               tech5="Shopify"
+              tech6="GraphQL"
             />
             <ProjectCard
               title="PMI Total Fitness"
@@ -98,6 +100,7 @@ const Projects = () => {
               tech3="Tailwind CSS"
               tech4="Snipcart"
               tech5="Contentful CMS"
+              tech6="GraphQL"
             />
             <ProjectCard
               title="Danceland"
@@ -108,6 +111,7 @@ const Projects = () => {
               tech3="Tailwind CSS"
               tech4="Airtable CMS"
               tech5="Algolia"
+              tech6="GraphQL"
             />
           </div>
         </div>

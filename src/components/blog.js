@@ -5,7 +5,10 @@ import BlogCard from "../components/blogCard"
 const Blog = () => {
   const data = useStaticQuery(graphql`
     {
-      allMdx(sort: { fields: frontmatter___date, order: DESC }, limit: 3) {
+      blog: allMdx(
+        sort: { fields: frontmatter___date, order: DESC }
+        limit: 3
+      ) {
         edges {
           node {
             frontmatter {
@@ -30,8 +33,8 @@ const Blog = () => {
     }
   `)
   return (
-    <div id="blog" className="h-screen">
-      <div className="flex justify-center h-full w-full">
+    <div className="px-40 mt-24">
+      <div className="flex justify-center h-full w-full" id="blog">
         <div className="w-full self-center px-40">
           <div className="flex flex-col items-center">
             <h2 className="text-main-navy text-5xl">Blog</h2>
@@ -43,10 +46,18 @@ const Blog = () => {
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-3 gap-6">
-        <BlogCard />
-        <BlogCard />
-        <BlogCard />
+      <div className="grid grid-cols-3 gap-6 mt-6">
+        {data.blog.edges.map(({ node: blog }) => {
+          return (
+            <BlogCard
+              slug={blog.frontmatter.slug}
+              title={blog.frontmatter.title}
+              exceprt={blog.frontmatter.exceprt}
+              img={blog.frontmatter.featuredImage.childImageSharp.fluid}
+              date={blog.frontmatter.date}
+            />
+          )
+        })}
       </div>
     </div>
   )
