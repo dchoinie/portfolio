@@ -3,7 +3,18 @@ title: First Blog Post
 slug: my-first-post
 date: 2020-07-27
 featuredImage: fam.jpg
-exceprt: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, beatae.  
+exceprt: Welcome to my blog!
 ---
 
-# Stuff goes in here
+import Fam from "./fam.jpg"
+
+<div className="px-6 lg:px-40 my-12 flex flex-col items-center">
+  <h2 className="text-4xl text-main-navy">
+    {props.pageContext.frontmatter.title}
+  </h2>
+  <h4 className="text-xl text-gray-600 text-center max-w-4xl">
+    Thanks for checking out my blog. It is very new, but I will be posting dev
+    tips I've picked up on my journey to learning web development.
+  </h4>
+  {/* <img src={Fam} className="self-center rounded-md shadow-md my-4" /> */}
+</div>

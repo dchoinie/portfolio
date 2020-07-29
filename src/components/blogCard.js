@@ -28,7 +28,7 @@ export default class blogCard extends Component {
             fluid={this.props.img}
             className="w-full my-4 shadow-md rounded-md"
           />
-          <p className="text-gray-600">{this.props.exceprt}</p>
+          <p className="text-gray-600">{this.props.exceprt}...</p>
           <p className="flex justify-center bg-main-navy text-lg mt-2 text-white lowercase py-2 px-8 rounded-md focus:outline-none tracking-wider hover:bg-blue-800 whitespace-no-wrap">
             Read More <FaArrowRight className="self-center ml-2" />
           </p>
