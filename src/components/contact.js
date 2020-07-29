@@ -20,9 +20,12 @@ const Contact = () => {
             <div className="flex w-full">
               <form
                 name="contact"
-                netlify
+                data-netlify="true"
+                method="post"
+                data-netlify-honeypot="bot-field"
                 className="flex flex-col w-full text-lg text-main-navy"
               >
+                <input type="hidden" name="contact-form" value="contact" />
                 <div className="flex gap-6 mb-3">
                   <label htmlFor="first" className="hidden"></label>
                   <input
