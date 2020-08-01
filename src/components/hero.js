@@ -18,9 +18,10 @@ const Hero = () => {
     {
       hero: file(relativePath: { eq: "dan.png" }) {
         childImageSharp {
-          fluid(quality: 90) {
+          fluid(maxWidth: 500) {
             src
             srcSet
+            srcSetWebp
             ...GatsbyImageSharpFluid
           }
         }

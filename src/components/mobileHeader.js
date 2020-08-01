@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import { Spring, animated } from "react-spring/renderprops"
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll"
 import { FaBars } from "react-icons/fa"
 
 const MobileHeader = () => {
@@ -30,11 +31,41 @@ const MobileHeader = () => {
                 className="flex flex-col text-right text-xl"
                 style={props}
               >
-                <li>Skills</li>
-                <li>Projects</li>
-                <li>About</li>
-                <li>Blog</li>
-                <li>Contact</li>
+                <li>
+                  <button className="focus:outline-none lowercase comfortaa border-b-2 border-transparent hover:border-main-blue">
+                    <ScrollLink to="skills" smooth={true} duration={500}>
+                      Skills
+                    </ScrollLink>
+                  </button>
+                </li>
+                <li>
+                  <button className="focus:outline-none lowercase comfortaa border-b-2 border-transparent hover:border-main-blue">
+                    <ScrollLink to="projects" smooth={true} duration={500}>
+                      Projects
+                    </ScrollLink>
+                  </button>
+                </li>
+                <li>
+                  <button className="focus:outline-none lowercase comfortaa border-b-2 border-transparent hover:border-main-blue">
+                    <ScrollLink to="about" smooth={true} duration={500}>
+                      About
+                    </ScrollLink>
+                  </button>
+                </li>
+                <li>
+                  <button className="focus:outline-none lowercase comfortaa border-b-2 border-transparent hover:border-main-blue">
+                    <ScrollLink to="blog" smooth={true} duration={500}>
+                      Blog
+                    </ScrollLink>
+                  </button>
+                </li>
+                <li>
+                  <button className="focus:outline-none lowercase comfortaa border-b-2 border-transparent hover:border-main-blue">
+                    <ScrollLink to="contact" smooth={true} duration={500}>
+                      Contact
+                    </ScrollLink>
+                  </button>
+                </li>
               </animated.ul>
             )}
           </Spring>
