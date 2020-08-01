@@ -11,6 +11,7 @@ export default class blogCard extends Component {
     img: PropTypes.string,
     date: PropTypes.string,
     slug: PropTypes.string,
+    id: PropTypes.string,
   }
 
   render() {
@@ -18,6 +19,7 @@ export default class blogCard extends Component {
       <Link
         to={this.props.slug}
         className="shadow-md rounded-md border border-gray-300"
+        key={this.props.id}
       >
         <div className="flex flex-col p-4">
           <h2 className="text-2xl text-center text-main-navy">

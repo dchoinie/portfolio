@@ -11,6 +11,7 @@ const Blog = () => {
       ) {
         edges {
           node {
+            id
             frontmatter {
               exceprt
               date(formatString: "MMM DD, YYYY")
@@ -52,6 +53,7 @@ const Blog = () => {
         {data.blog.edges.map(({ node: blog }) => {
           return (
             <BlogCard
+              key={blog.id}
               slug={blog.frontmatter.slug}
               title={blog.frontmatter.title}
               exceprt={blog.frontmatter.exceprt}
